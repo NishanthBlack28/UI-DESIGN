@@ -63,9 +63,26 @@ html{
 }
 
 /*blog section*/
-h2{font-size: 24px;
+
+h2 {
+  font-size: 24px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 36px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 48px;
+  background: #ffe259;
+  bottom: -8px;
+  left: 0;
+}
+
+.posts-wrapper {
+  padding-top: 100px;
 }
 
 .blogpost-card h3{
